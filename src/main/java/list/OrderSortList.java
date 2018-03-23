@@ -27,11 +27,8 @@ public class OrderSortList {
 
         List<String> list = new ArrayList<String>() {
             {
-
                 add("a");
                 add("b");
-
-
                 add("c");
             }
         };

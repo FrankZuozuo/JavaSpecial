@@ -8,6 +8,7 @@ import java.util.Random;
  */
 public abstract class AbstractParent {
 
+    // 设计模式 - 模板方法
 
 
     public final int birthToChild(int bound) {

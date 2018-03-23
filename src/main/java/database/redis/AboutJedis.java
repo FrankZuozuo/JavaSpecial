@@ -1,6 +1,5 @@
 package database.redis;
 
-import lombok.extern.slf4j.Slf4j;
 import redis.clients.jedis.Jedis;
 
 /**
@@ -9,19 +8,21 @@ import redis.clients.jedis.Jedis;
  */
 
 
-public class JedisTest {
+public class AboutJedis {
 
 
     public static void main(String[] args) {
 
 
-        testFunction();
+        testSpeed();
 
+
+        test();
 
     }
 
 
-    private static void testFunction() {
+    private static void testSpeed() {
 
         long endTime = System.currentTimeMillis() + 1000;
         Jedis jedis = new Jedis();
@@ -30,14 +31,18 @@ public class JedisTest {
 
         for (; endTime > System.currentTimeMillis(); ) {
             //    jedis.hgetAll("userHashMap");  52000
-            //   jedis.get("now_time");  54000
-            //  jedis.set("now_time", "" + System.currentTimeMillis()); 51000
+            //    jedis.get("now_time");  54000
+            //    jedis.set("now_time", "" + System.currentTimeMillis()); 51000
             count++;
         }
         System.out.println(count);
     }
 
     private static void test() {
+
+        // 你需要搭建一个本地的Redis数据库
+
+        // default host is localhost
         Jedis jedis = new Jedis();
 
         System.out.println(jedis.ping());

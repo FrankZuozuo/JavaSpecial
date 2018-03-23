@@ -1,4 +1,4 @@
-package http;
+package consts.enums;
 
 /**
  * @author Created by 谭健 on 2018/3/23 0023. 星期五. 13:42.

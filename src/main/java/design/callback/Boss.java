@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
  */
 
 @NoArgsConstructor
-public class Boss implements CallBack {
+public class Boss implements CallBack<String, String, String, String> {
 
     private Staff staff;
 
@@ -34,6 +34,12 @@ public class Boss implements CallBack {
 
 
     @Override
+    public void callback(String parameter) {
+        System.out.println("通知Boss" + parameter);
+    }
+
+
+    @Override
     public void before(String before) {
         System.out.println("before : " + before);
     }
@@ -48,9 +54,5 @@ public class Boss implements CallBack {
         System.out.println("after :" + after);
     }
 
-    @Override
-    public void callback() {
 
-        System.out.println("ok");
-    }
 }

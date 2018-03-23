@@ -13,8 +13,12 @@ public class StaffImpl implements Staff{
     }
 
     @Override
-    public void pourTea(CallBack sign){
-        sign.call("好的收到","移动位置","好的，已经完成");
+    public void pourTea(CallBack<String, String, String, String> sign){
+
+        // 倒茶
+
+        // 拿老板的签名跟老板通信
+        sign.call("好的收到","移动位置","好的，已经完成","");
     }
 
 

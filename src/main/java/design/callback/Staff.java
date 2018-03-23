@@ -9,7 +9,7 @@ public interface Staff {
 
 
 
-    void pourTea(CallBack sign);
+    void pourTea(CallBack<String, String, String, String> sign);
 
 
 

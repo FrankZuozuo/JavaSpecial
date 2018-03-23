@@ -1,4 +1,4 @@
-package string;
+package string.stringconn;
 
 /**
  * Created by 谭健 on 2018/3/21 0021. 21:31.

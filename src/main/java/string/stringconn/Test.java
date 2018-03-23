@@ -1,4 +1,4 @@
-package string;
+package string.stringconn;
 
 /**
  * Created by 谭健 on 2018/3/21 0021. 17:27.
@@ -8,6 +8,13 @@ public class Test {
 
 
     public static void main(String[] args) {
+
+        test();
+
+    }
+
+
+    private static void test() {
 
 
         boolean bool = false;
@@ -20,16 +27,17 @@ public class Test {
                 StringConn.of(
                         "Hello ",
                         "World",
-                        (StringLogicConn) () ->   bool ? "!":".",
+                        (StringLogicConn) () -> bool ? "!" : ".",
 
                         (StringLogicConn) () -> {
-                           String text = "off";
-                           if (text.equals(str)) return "on";
-                           return "off";
+                            String text = "off";
+                            if (text.equals(str)) return "on";
+                            return "off";
                         }
 
                 )
         );
+
 
 
     }

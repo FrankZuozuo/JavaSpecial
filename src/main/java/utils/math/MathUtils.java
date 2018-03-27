@@ -43,4 +43,6 @@ public class MathUtils {
     }
 
 
+    // 9999_9999 == 99999999
+
 }

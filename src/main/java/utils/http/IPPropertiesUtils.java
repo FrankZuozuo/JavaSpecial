@@ -6,7 +6,7 @@ import lombok.Data;
  * @author Created by 谭健 on 2018/3/23 0023. 星期五. 14:00.
  * © All Rights Reserved.
  */
-public class TBIPLibUtils {
+public class IPPropertiesUtils {
 
     // 淘宝IP库工具类
 

@@ -110,9 +110,10 @@ public class IDCardUtils {
     private static char getCheckCode(String idCard) {
         int checkCodeIndex = 0;
         for (int i = 0; i < 17; i++) {
-            checkCodeIndex += (idCard.charAt(i) - '0') * WEIGHTING_FACTOR[i];
+            // '0' == 48
+            checkCodeIndex += (idCard.charAt(i) - 48) * WEIGHTING_FACTOR[i];
         }
-        checkCodeIndex = checkCodeIndex % CHECK_CODE.length;
+        checkCodeIndex %= CHECK_CODE.length;
         return CHECK_CODE[checkCodeIndex];
     }
 

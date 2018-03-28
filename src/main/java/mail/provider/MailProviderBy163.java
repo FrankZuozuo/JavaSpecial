@@ -1,7 +1,6 @@
 package mail.provider;
 
 import mail.Mail;
-import mail.MailProvider;
 import mail.factory.MailHostFactory;
 import mail.factory.MailPort;
 

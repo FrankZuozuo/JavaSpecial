@@ -17,6 +17,9 @@ public class ImplInterface {
     }
 
 
+    /**
+     * 使用lambda实现接口
+     */
     private static void test() {
 
 

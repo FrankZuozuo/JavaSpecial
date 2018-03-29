@@ -29,6 +29,7 @@ public class AboutHashMap {
     private static void test(){
 
 
+        // 创建一个容量可能是3的map
         Map map = Maps.newHashMapWithExpectedSize(3);
 
         Map<String,Object> treeMap = new TreeMap<String,Object>(){

@@ -13,6 +13,9 @@ import java.util.List;
 public class Test {
 
 
+    /**
+     * Java 8 的Stream 已经可以很方便的应用过滤器
+     */
     public static void main(String[] args) {
 
         test();
@@ -59,6 +62,5 @@ public class Test {
         people.forEach(
                 person -> {Print.echo(person.toString());}
         );
-
     }
 }

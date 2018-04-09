@@ -1,7 +1,5 @@
 package exception;
 
-import java.io.Serializable;
-
 /**
  * @author Created by 谭健 on 2018/4/9 0009. 星期一. 9:29.
  * © All Rights Reserved.
